@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #16a085;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+
+        td {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda Online</h1>
+    <h2>Bienvenidos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Productos</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Oferta</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zapatos</td>
+                <td>$10</td>
+                <td>Descripción 1</td>
+                <td>Sí</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Tienda de Acampar</td>
+                <td>$15</td>
+                <td>Descripción 2</td>
+                <td>No</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mesa</td>
+                <td>$8</td>
+                <td>Descripción 3</td>
+                <td>Sí</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Mueble</td>
+                <td>$20</td>
+                <td>Descripción 4</td>
+                <td>No</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Refrigeradora Pequeña</td>
+                <td>$50</td>
+                <td>Descripción 5</td>
+                <td>Sí</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Libro</td>
+                <td>$30</td>
+                <td>Descripción 6</td>
+                <td>No</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Juego de Vasos de Vidrio</td>
+                <td>$12</td>
+                <td>Descripción 7</td>
+                <td>Sí</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Portata papeles</td>
+                <td>$22</td>
+                <td>Descripción 8</td>
+                <td>No</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Carrito de Juguete</td>
+                <td>$18</td>
+                <td>Descripción 9</td>
+                <td>Sí</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Perfume</td>
+                <td>$35</td>
+                <td>Descripción 10</td>
+                <td>No</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.body.addEventListener('click', () => {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
