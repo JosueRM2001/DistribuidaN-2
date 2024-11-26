@@ -32,8 +32,8 @@ jobs:
           cd DistribuidaN-2
           sudo git pull origin main
           cd OneProject
-          npm install
-          npm run build
-          pm2 start npm --name "my-app" -- run dev
-          pm2 save
+          sudo npm install
+          sudo npm run build
+          sudo pm2 start npm --name "my-app" -- run dev
+          sudo pm2 save
           echo "Application is running in the background."
