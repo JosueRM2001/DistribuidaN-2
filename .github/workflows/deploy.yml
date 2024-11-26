@@ -30,7 +30,7 @@ jobs:
         script: |
           pm2 delete my-app || echo "No existing process found"
           cd DistribuidaN-2
-          git pull origin main
+          sudo git pull origin main
           cd OneProject
           npm install
           npm run build
